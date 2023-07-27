@@ -3,8 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:pluto_layout/pluto_layout.dart';
 import 'package:test/pluto_layout/widgets/custom_ex_tab_item.widget.dart';
 
-import '../widgets/custom_imple_tabitem.widget.dart';
-
 class PlutoLayoutScreen extends StatelessWidget {
   const PlutoLayoutScreen({super.key});
 
@@ -63,26 +61,29 @@ class PlutoLayoutScreen extends StatelessWidget {
             ],
           ),
         ),
-        right: PlutoLayoutContainer(
-          child: PlutoLayoutTabs(
-            items: const [
-              CustomImpleTabItem(
-                enabled: true,
-                label: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 4, horizontal: 10),
-                  child: Text('RIGHT1'),
-                ),
-              ),
-              CustomImpleTabItem(
-                enabled: false,
-                label: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 4, horizontal: 10),
-                  child: Text('RIGHT2'),
-                ),
-              ),
-            ],
-          ),
-        ),
+        // ----------------------------------------------------------------
+        // -
+        // -----------------------------------------------------------------
+        // right: PlutoLayoutContainer(
+        //   child: PlutoLayoutTabs(
+        //     items: const [
+        //       CustomImpleTabItem(
+        //         enabled: true,
+        //         label: Padding(
+        //           padding: EdgeInsets.symmetric(vertical: 4, horizontal: 10),
+        //           child: Text('RIGHT1'),
+        //         ),
+        //       ),
+        //       CustomImpleTabItem(
+        //         enabled: false,
+        //         label: Padding(
+        //           padding: EdgeInsets.symmetric(vertical: 4, horizontal: 10),
+        //           child: Text('RIGHT2'),
+        //         ),
+        //       ),
+        //     ],
+        //   ),
+        // ),
         bottom: PlutoLayoutContainer(
           child: PlutoLayoutTabs(
             items: [

@@ -38,6 +38,8 @@ dependencies:
   flutter_hooks: ^0.20.0
   # https://pub.dev/packages/pluto_layout
   pluto_layout: ^1.0.0
+  fluent_ui: ^4.7.0
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
